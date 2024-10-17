@@ -139,3 +139,29 @@ Complete the exercise in the space below:
 const calculateTip = (billAmount, tipPercentage) => billAmount * tipPercentage * 0.01;
 
 console.log('Exercise 7 Result:', calculateTip(80, 20));
+
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature. 
+It takes two arguments: a temperature and a string representing the 
+scale ('C' for Celsius, 'F' for Fahrenheit). 
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+Complete the exercise in the space below:
+*/
+function convertTemperature(temperature, scale){
+    let scaleToLowerCase = scale.toLowerCase();
+    if ( scaleToLowerCase === 'c') {
+        return (temperature * 9/5) + 32;       
+    }
+
+    return (temperature - 32) * 5/9;
+}
+
+console.log('Exercise 8 Result:', convertTemperature(25, "C"));
+console.log('Exercise 8 Result:', convertTemperature(77, "F"));
+
