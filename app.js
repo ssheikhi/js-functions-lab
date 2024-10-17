@@ -100,3 +100,27 @@ console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 console.log('Exercise 5 Result:', greetUser("Sam", "afternoon"));
 console.log('Exercise 5 Result:', greetUser("Sam", "evening"));
 
+/*
+Exercise 6: maxOfThree()
+
+Define a function, maxOfThree. It should accept three numbers 
+and return the largest among them.
+
+Example: maxOfThree(17, 4, 9) should return 17.
+
+Complete the exercise in the space below:
+*/
+
+function maxOfThree(number1, number2, number3){
+    let max = number1;
+    if (number2 > max ) {
+        max = number2;    
+    }
+    if (number3 > max) {
+        max = number3
+    } 
+    return max;
+}
+
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
+
