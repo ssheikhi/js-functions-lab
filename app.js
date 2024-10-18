@@ -261,7 +261,7 @@ function createUsername(firstName, lastName){
 
     let firstThreeFirstName = firstName[0] + firstName[1] + firstName[2];
     let firstThreeLastName = lastName[0] + lastName[1] + lastName[2];
-    
+
     let totalLength = firstName.length + lastName.length;
     let username = firstThreeFirstName + firstThreeLastName + totalLength;
 
@@ -270,4 +270,29 @@ function createUsername(firstName, lastName){
 
 
 console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+
+/*
+Exercise 12: numArgs()
+
+Challenge yourself with numArgs. 
+This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+
+
+function numArgs(params){
+
+    let numberOfParams = 0;
+
+    //In JavaScript, the arguments passed to a function are available as an arguments object
+    for (let i = 0; i < arguments.length; i++) {
+        numberOfParams ++;
+    }
+    
+    return numberOfParams;
+}
+
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
 
