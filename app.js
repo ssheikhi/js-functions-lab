@@ -242,4 +242,32 @@ function calculateGrade(gradeOfTypeScore) {
 
 console.log('Exercise 10 Result:', calculateGrade(75));
 
+/*
+Exercise 11: createUsername()
+
+Define a function called createUsername. 
+It should take a first name and a last name and return a username. 
+
+The username should be a combination of the following:
+- The first three letters of the first name.
+- The first three letters of the last name.
+- The total character count of the first and last name combined.
+
+Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
+
+Complete the exercise in the space below:
+*/
+function createUsername(firstName, lastName){
+
+    let firstThreeFirstName = firstName[0] + firstName[1] + firstName[2];
+    let firstThreeLastName = lastName[0] + lastName[1] + lastName[2];
+    
+    let totalLength = firstName.length + lastName.length;
+    let username = firstThreeFirstName + firstThreeLastName + totalLength;
+
+    return username; 
+}
+
+
+console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
 
