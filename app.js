@@ -283,15 +283,9 @@ Complete the exercise in the space below:
 
 
 function numArgs(params){
-
-    let numberOfParams = 0;
-
-    //In JavaScript, the arguments passed to a function are available as an arguments object
-    for (let i = 0; i < arguments.length; i++) {
-        numberOfParams ++;
-    }
     
-    return numberOfParams;
+    //In JavaScript, the arguments passed to a function are available as an arguments object
+    return arguments.length ;
 }
 
 console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
